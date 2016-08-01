@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #F2F2F2;
+  font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+}
+
+@media screen and (max-width: 1366px) {
+  .col.l1 {
+    width: 8.33333%;
+  }
+  .col.l2 {
+    width: 16.66667%;
+  }
+  .col.l3 {
+    width: 25%;
+  }
+  .col.l4 {
+    width: 33.33333%;
+  }
+  .col.l5 {
+    width: 41.66667%;
+  }
+  .col.l6 {
+    width: 50%;
+  }
+  .col.l7 {
+    width: 58.33333%;
+  }
+  .col.l8 {
+    width: 66.66667%;
+  }
+  .col.l9 {
+    width: 75%;
+  }
+  .col.l10 {
+    width: 83.33333%;
+  }
+  .col.l11 {
+    width: 91.66667%;
+  }
+  .col.l12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .col.m1 {
+    width: 8.33333%;
+  }
+  .col.m2 {
+    width: 16.66667%;
+  }
+  .col.m3 {
+    width: 25%;
+  }
+  .col.m4 {
+    width: 33.33333%;
+  }
+  .col.m5 {
+    width: 41.66667%;
+  }
+  .col.m6 {
+    width: 50%;
+  }
+  .col.m7 {
+    width: 58.33333%;
+  }
+  .col.m8 {
+    width: 66.66667%;
+  }
+  .col.m9 {
+    width: 75%;
+  }
+  .col.m10 {
+    width: 83.33333%;
+  }
+  .col.m11 {
+    width: 91.66667%;
+  }
+  .col.m12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .col.s1 {
+    width: 8.33333%;
+  }
+  .col.s2 {
+    width: 16.66667%;
+  }
+  .col.s3 {
+    width: 25%;
+  }
+  .col.s4 {
+    width: 33.33333%;
+  }
+  .col.s5 {
+    width: 41.66667%;
+  }
+  .col.s6 {
+    width: 50%;
+  }
+  .col.s7 {
+    width: 58.33333%;
+  }
+  .col.s8 {
+    width: 66.66667%;
+  }
+  .col.s9 {
+    width: 75%;
+  }
+  .col.s10 {
+    width: 83.33333%;
+  }
+  .col.s11 {
+    width: 91.66667%;
+  }
+  .col.s12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .col.ss1 {
+    width: 8.33333%;
+  }
+  .col.ss2 {
+    width: 16.66667%;
+  }
+  .col.ss3 {
+    width: 25%;
+  }
+  .col.ss4 {
+    width: 33.33333%;
+  }
+  .col.ss5 {
+    width: 41.66667%;
+  }
+  .col.ss6 {
+    width: 50%;
+  }
+  .col.ss7 {
+    width: 58.33333%;
+  }
+  .col.ss8 {
+    width: 66.66667%;
+  }
+  .col.ss9 {
+    width: 75%;
+  }
+  .col.ss10 {
+    width: 83.33333%;
+  }
+  .col.ss11 {
+    width: 91.66667%;
+  }
+  .col.ss12 {
+    width: 100%;
+  }
+}
+
+.head {
+  width: 100%;
+  height: 202px;
+  padding: 138px 0 0 0;
+  min-height: 400px;
+  background-image: url(images/1.jpg);
+  background-size: cover;
+  background-position: center 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.titles {
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 202px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title .bigtitle {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.title .bigtitle h1 {
+  width: 100%;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.title .bigtitle h1 a {
+  font-weight: 700;
+  color: #fff;
+  font-size: 64px;
+}
+
+.title .bigtitle h1 a:hover {
+  text-decoration: underline;
+}
+
+.title .smalltitle {
+  width: 100%;
+  color: #fff;
+  padding: 0;
+  margin: 0 0 45px;
+  font-weight: 100;
+  font-size: 34px;
+  text-align: center;
+}
+
+.head .logo {
+  width: 98%;
+  height: 68px;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  bottom: -34px;
+  text-align: center;
+}
+
+.head .logo a {
+  display: block;
+}
+
+.head .logo img {
+  width: 78px;
+  height: 67.609px;
+}
+
+.content {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.content .container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 1366px) {
+  .content .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content .container {
+    width: 940px;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .content .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .content .container {
+    width: 90%;
+  }
+}
+
+.content .container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.content .container .col {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+
+.content .container .col a {
+  display: block;
+}
+
+.content .container .col img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .container .col .neirong {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content .container .col .neirong h2 {
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
+
+.content .container .col .neirong h2 a {
+  color: #777;
+  font-size: 24px;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  right: 0;
+}
+
+.pagination span {
+  color: #39414a;
+  font-size: 13px;
+}
+
+.pagination a {
+  display: block;
+  border: 1px solid #39414a;
+  position: absolute;
+  top: -10px;
+  padding: 10px;
+  color: #39414a;
+  white-space: nowrap;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.pagination .next {
+  right: 10px;
+}
+
+.pagination .pre {
+  display: none;
+  left: 10px;
+}
+
+.submit {
+  width: 100%;
+  background-color: #eee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.submit .text {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 1366px) {
+  .submit .text {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .submit .text {
+    width: 940px;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .submit .text {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .submit .text {
+    width: 90%;
+  }
+}
+
+.submit .text .wenzi {
+  width: 100%;
+  height: 100%;
+}
+
+.wenzi .title1, .wenzi .title2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.wenzi .title1 a, .wenzi .title2 a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  background: #202020;
+  padding: 35px 0 0;
+  color: #959595;
+}
+
+.footer .bufen {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 1366px) {
+  .footer .bufen {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer .bufen {
+    width: 940px;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .footer .bufen {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer .bufen {
+    width: 90%;
+  }
+}
+
+.bufen .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.bufen .row .col {
+  float: left;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.bufen .row .col .zhongjian {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.bufen .row .col .zhongjian h4 {
+  color: #fff;
+  border-bottom: 1px solid #303030;
+  padding-bottom: 7px;
+  margin-bottom: 21px;
+  position: relative;
+  font-size: 18px;
+}
+
+.bufen .row .col .zhongjian h4::after {
+  content: "";
+  width: 90px;
+  height: 1px;
+  background: #337ab7;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.bufen .row .col .zhongjian .hxia a {
+  display: block;
+  border-bottom: 1px dashed #303030;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  color: #959595;
+}
+
+.bufen .row .col .zhongjian .hxia a:hover {
+  color: #fff;
+}
+
+.bufen .row .col .zhongjian .hxia .duyi {
+  display: inline-block;
+  border: 1px solid #303030;
+  color: #959595;
+  padding: 2px 7px;
+  margin: 0 7px 7px 0;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+.bufen .row .col .zhongjian .hxia .duyi:hover {
+  background: #337ab7;
+  border: 1px solid #337ab7;
+  color: #fff;
+}
+
+.bottom {
+  background: #111;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border-top: 1px solid #303030;
+  width: 100%;
+}
+
+.bottom .limian {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.bottom .limian a {
+  color: #555;
+}
+
+.bottom .limian a:hover {
+  text-decoration: underline;
+}

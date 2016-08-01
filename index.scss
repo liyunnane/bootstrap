@@ -1,0 +1,395 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+
+body{
+  background: #F2F2F2;
+  font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+}
+//head开始！！！！！！！！！！！！！！！
+$l-device:1366px;
+$m-device:1200px;
+$s-device:988px;
+$ss-device:769px;
+$list:("l":$l-device,"m":$m-device,"s":$s-device,"ss":$ss-device);
+$number:12;
+@each $d in map_keys($list){
+  @media  screen and (max-width:map_get($list,$d)){
+    @for $i from 1 through $number{
+      .col.#{$d}#{$i}{
+        width:percentage($i/$number);
+      }
+    }
+  }
+}
+
+
+@mixin  v-align{
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.head{
+  width:100%;
+  height:202px;
+  padding:138px 0 0 0;
+  min-height: 400px;
+  background-image:url(images/1.jpg);
+  background-size:cover;
+  background-position:center 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+@mixin lon{
+  @media screen and (max-width:$l-device){
+    @content;
+  }
+}
+@mixin mon{
+  @media screen and (max-width:$m-device){
+    @content;
+  }
+}
+@mixin son{
+  @media screen and (max-width:$s-device){
+    @content;
+  }
+}
+
+@mixin end{
+  @media screen and (max-width:769px){
+    @content;
+  }
+}
+
+
+.titles{
+  margin:0 auto;
+}
+.title{
+  width:100%;
+  padding-left:15px;
+  padding-right:15px;
+  height:202px;
+  @include v-align;
+  position: relative;
+  .bigtitle{
+    text-align:center;
+    width:100%;
+    margin-bottom:30px;
+    h1{
+      width:100%;
+      font-size: 36px;
+      margin-top: 20px;
+      margin-bottom:10px;
+      a{
+        font-weight: 700;
+        color: #fff;
+        font-size: 64px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .smalltitle{
+    width:100%;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 45px;
+    font-weight: 100;
+    font-size: 34px;
+    text-align:center;
+  }
+}
+
+.head .logo{
+  width:98%;
+  height:68px;
+  position: absolute;
+  left:1%;
+  right:1%;
+  bottom:-34px;
+  text-align:center;
+  a{
+    display: block;
+  }
+
+  img{
+    width:78px;
+    height:67.609px;
+  }
+}
+
+
+
+
+
+
+//content 开始！！！！！！！！！！！！！！！！
+.content{
+  width:100%;
+  margin-top:90px;
+}
+
+
+.content .container{
+  @include lon{
+    width:1140px;
+  }
+  @include mon{
+    width:940px;
+  }
+  @include son{
+    width:720px;
+  }
+  @include end{
+    width:90%;
+  }
+  .row{
+    margin-left:-15px;
+    margin-right:-15px;
+  }
+  margin:0 auto;
+  padding-left:15px;
+  padding-right:15px;
+  .col{
+    padding-left:15px;
+    padding-right:15px;
+    box-sizing:border-box;
+    float: left;
+    position: relative;
+    a{
+      display:block;
+    }
+    img{
+      width:100%;
+      height:100%;
+    }
+    .neirong{
+      width:100%;
+      height:auto;
+      background: #fff;
+      padding-left:15px;
+      padding-right:15px;
+      box-sizing:border-box;
+      padding-bottom:40px;
+      padding-top:15px;
+      margin-bottom: 30px;
+      position: relative;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+      h2{
+        width:100%;
+        position: absolute;
+        bottom:12px;
+        left:0;
+        a{
+          color: #777;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.clear{
+  clear:both;
+}
+
+//分页开始
+.pagination{
+  margin-top:20px;
+  margin-bottom:40px;
+  width:100%;
+  height:auto;
+  text-align: center;
+  position: relative;
+  right:0;
+  span{
+    color: #39414a;
+    font-size: 13px;
+  }
+  a{
+    display:block;
+    border: 1px solid #39414a;
+    position: absolute;
+    top: -10px;
+    padding: 10px;
+    color: #39414a;
+    white-space: nowrap;
+    border-radius: 3px;
+    text-decoration: none;
+
+  }
+  .next{
+    right:10px;
+  }
+  .pre{
+    display:none;
+    left:10px;
+  }
+}
+
+
+//submit开始
+.submit{
+  width:100%;
+  background-color: #eee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  .text{
+    @include lon{
+      width:1140px;
+    }
+    @include mon{
+      width:940px;
+    }
+    @include son{
+      width:720px;
+    }
+    @include end{
+      width:90%;
+    }
+    margin:auto;
+    padding-left:15px;
+    padding-right:15px;
+    .wenzi{
+      width:100%;
+      height:100%;
+    }
+  }
+}
+
+.wenzi .title1,.wenzi .title2{
+  width:100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  a{
+    color: #337ab7;
+    text-decoration: none;
+  }
+}
+
+
+.footer{
+  width:100%;
+  background: #202020;
+  padding: 35px 0 0;
+  color: #959595;
+  .bufen{
+    position: relative;
+    @include lon{
+      width:1140px;
+    }
+    @include mon{
+      width:940px;
+    }
+    @include son{
+      width:720px;
+    }
+    @include end{
+      width:90%;
+    }
+    width:1170px;
+    margin:0 auto;
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+.bufen .row{
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.bufen .row .col{
+  float: left;
+  position: relative;
+  padding-left:15px;
+  padding-right:15px;
+  box-sizing:border-box;
+  .zhongjian{
+    width:100%;
+    padding-left:30px;
+    padding-right:30px;
+    margin-bottom:35px;
+    box-sizing:border-box;
+    h4{
+      color: #fff;
+      border-bottom: 1px solid #303030;
+      padding-bottom: 7px;
+      margin-bottom: 21px;
+      position: relative;
+      font-size: 18px;
+      &::after{
+        content: "";
+        width: 90px;
+        height: 1px;
+        background: #337ab7;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+      }
+    }
+    .hxia{
+      a{
+        display: block;
+        border-bottom: 1px dashed #303030;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+        color: #959595;
+        &:hover{
+          color:#fff;
+        }
+      }
+      .duyi{
+        display: inline-block;
+        border: 1px solid #303030;
+        color: #959595;
+        padding:2px 7px;
+        margin: 0 7px 7px 0;
+        line-height:1.5em;
+        font-size: 14px;
+        &:hover{
+          background:#337ab7;
+          border:1px solid #337ab7;
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+
+//bottom开始
+
+.bottom{
+  background: #111;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border-top: 1px solid #303030;
+  width:100%;
+  .limian{
+    width:100%;
+    padding-left:15px;
+    padding-right:15px;
+    margin:0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    color:#555;
+    a{
+      color:#555;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
